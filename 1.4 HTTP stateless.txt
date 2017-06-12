@@ -1,0 +1,3 @@
+Http-ul este un protocol stateless, adica nu stocheaza nicio informatie, nici de client, nici de la server.
+El face posibila comunicarea cu daemonul.
+Protocolul http ne ajuta pentru a comunica cu serverul prin request-uri si raspunsuri. Fara http nu am putea comunica cu serverul si totodata nu am putea sa primi ceea ce cerem.

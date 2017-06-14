@@ -9,7 +9,9 @@ A=TAG
 B=ATTRIBUTE
 C=VALUE
 
-'<' 'A' [B <C>]' >'
-'<' 'A' [B <C>] [B] '>'
-'<' 'A' [B <C>] '>'
-'<' 'A' '>'
+Regula : 'TAG' [ATRIBUTE <VALUE>] [ATTRIBUTE] 
+
+'<' 'TAG' [ATTRIBUTE <VALUE>] '>'
+'<' 'TAG' [ATTRIBUTE <VALUE>] [B] '>'
+'<' 'TAG' [ATTRIBUTE <VALUE>] '>'
+'<' 'TAG' '>'

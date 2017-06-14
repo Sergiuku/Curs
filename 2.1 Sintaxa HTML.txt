@@ -1,0 +1,15 @@
+1. Creaza o specifica?ie sintactica a limbajului HTML folosind doar cuvintele cheie TAG,
+ATTRIBUTE ?i VALUE, care combinate cu [] ?i <> sa reflecte cât mai corect sintaxa limbajului.
+Specifica?ia trebuie sa valideze orice text HTML valid. Un exemplu de input ar fi:
+<form method="get">
+<checkbox name="hello" checked>
+<input type="submit">
+</form>
+A=TAG
+B=ATTRIBUTE
+C=VALUE
+
+'<' 'A' [B <C>]' >'
+'<' 'A' [B <C>] [B] '>'
+'<' 'A' [B <C>] '>'
+'<' 'A' '>'

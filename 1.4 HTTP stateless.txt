@@ -1,4 +1,12 @@
-Http-ul este un protocol stateless, adica nu stocheaza nicio informatie, nici de la client, nici de la server.
-El face posibila comunicarea cu daemonul.
-Protocolul http ne ajuta pentru a comunica cu serverul prin request-uri si raspunsuri. 
-Fara http nu am putea comunica cu serverul si totodata nu am putea primi ceea ce cerem, adica serverul ar fi incapabil sa intelegea cerintle noastre.
+HTTP este un protocol stateless in sensul ca fiecare cerere de la client este independenta de celelalte. Intre client si server nu se poate realizat o comunicare continua.
+Un exemplu de mecanism care poate sa tina o comunicare continua sunt cookie-urile. Acestea salveaza informatii despre user in timpul folosirii unui website. 
+Protocolul HTTP mai poate fi numit si un transportator intre server si client.
+Acest protocol este ofera o cale de a comunica cu daemonul pe un limbaj comun.
+In cazul unui website as putea spune ca protocolul HTTP este necesar, fara el nu s-ar putea face comunicarea dintre daemon(apache) si client(browser, telnet).
+Una dintre metodele prin care se poate face un request cu ajutorul HTTP este metoda GET fiind numita si HTTP request.
+In urma folosirii comenzii GET comunicatia cu daemonul este compusa din 3 segmente: 
+	1.HTTP Request(este alcatuita din request line-ul, adica cea prin care ceri efecti un document si request header prin care clientul trimite informatii aditionale legate de request line pentru ca daemonul sa faca diferenta in momentul in care acesta foloseste mai multe domenii simultan.)
+	2.HTTP response headers(sunt informatii despre documentul html trimise ca raspuns de catre daemon clientului).
+	3.HTTP response body (este continutul documentului trimis ca raspuns de catre daemon).
+									
+

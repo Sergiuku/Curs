@@ -1,4 +1,4 @@
-Partea I
+﻿Partea I
 
 Fie regula sintactică
 [A] A [A A] [A [A <B>]] <C>
@@ -9,9 +9,14 @@ Care dintre următoarele inputuri o respectă?
 3. AC
 4. AAAC
 5. AAABC
-
-Raspuns: 1. si 5.
-
+			
+Raspunsuri corecte:
+	1. Nu respecta regula deoarece <C> este un parametru necesar si nu este inclus in input.
+	2. [A] A [A A] <C> - respecta regula deoarece cei 3 [A] sunt optionali, A este un parametru ce trebuie scris asa cum este, iar <C> este un parametru necesar, <B> nu mai este un parametru necesar deoarece am renuntat la parametrul optional [A <B>]. 	
+	3. A <C> - Respecta regula deoarece A trebuie scris exact asa cum este, iar <C> este un parametru necesar.
+	4. A [A A] <C> - Respecta regula, A fiind parametru scris asa cum este, cei 2 [A A] sunt parametrii optionali, iar <C> este un parametru necesar.
+ 	5. A[A[A<B>]]<C> - Respecta regula deoarece primul A va fi scris exact asa cum este, [A [A sunt parametrii optionali, dar daca sunt specificati atunci <B>]] va deveni un parametru necesar, urmat de <C> care este si el un parametru necesar.	
+	
 
 Partea II
 

@@ -2,14 +2,14 @@
 ATTRIBUTE ?i VALUE, care combinate cu [] ?i <> sa reflecte cât mai corect sintaxa limbajului.
 Specifica?ia trebuie sa valideze orice text HTML valid. Un exemplu de input ar fi:
 
-<form action="/actiune.php" method="get">   
+<form  method="get">   
 <checkbox name="hello" checked>
 <input type="submit">
 </form>
+	
+Regula : <TAG> [ATTRIBUTE <VALUE>] [ATTRIBUTE] 
 
-Regula : 'TAG' [ATTRIBUTE <VALUE>] [ATTRIBUTE <VALUE>] [ATTRIBUTE] 
-
-'<' 'TAG' [ATTRIBUTE <VALUE>] [ATTRIBUTE <VALUE>] '>'
-'<' 'TAG' [ATTRIBUTE <VALUE>] [ATTRIBUTE] '>'
-'<' 'TAG' [ATTRIBUTE <VALUE>] '>'
-'<' 'TAG' '>'
+'<' <TAG> [ATTRIBUTE <VALUE>] '>'
+'<' <TAG> [ATTRIBUTE <VALUE>] [ATTRIBUTE] '>'
+'<' <TAG> [ATTRIBUTE <VALUE>] '>'
+'<' <TAG> '>'

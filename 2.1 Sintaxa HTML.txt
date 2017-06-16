@@ -5,13 +5,10 @@ Specifica?ia trebuie sa valideze orice text HTML valid. Un exemplu de input ar f
 <checkbox name="hello" checked>
 <input type="submit">
 </form>
-A=TAG
-B=ATTRIBUTE
-C=VALUE
 
 Regula : 'TAG' [ATRIBUTE <VALUE>] [ATTRIBUTE] 
 
 '<' 'TAG' [ATTRIBUTE <VALUE>] '>'
-'<' 'TAG' [ATTRIBUTE <VALUE>] [B] '>'
+'<' 'TAG' [ATTRIBUTE <VALUE>] [ATTRIBUTE] '>'
 '<' 'TAG' [ATTRIBUTE <VALUE>] '>'
 '<' 'TAG' '>'

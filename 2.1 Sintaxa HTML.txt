@@ -9,7 +9,7 @@ Specifica?ia trebuie sa valideze orice text HTML valid. Un exemplu de input ar f
 
 Regula : 'TAG' [ATTRIBUTE <VALUE>] [ATTRIBUTE <VALUE>] [ATTRIBUTE] 
 
-'<' 'TAG' [ATTRIBUTE <VALUE>] '>'
+'<' 'TAG' [ATTRIBUTE <VALUE>] [ATTRIBUTE <VALUE>] '>'
 '<' 'TAG' [ATTRIBUTE <VALUE>] [ATTRIBUTE] '>'
 '<' 'TAG' [ATTRIBUTE <VALUE>] '>'
 '<' 'TAG' '>'

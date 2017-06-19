@@ -1,12 +1,19 @@
-HTTP este un protocol stateless in sensul ca fiecare cerere de la client este independenta de celelalte. Intre client si server nu se poate realizat o comunicare continua.
-Un exemplu de mecanism care poate sa tina o comunicare continua sunt cookie-urile. Acestea salveaza informatii despre user in timpul folosirii unui website. 
-Protocolul HTTP mai poate fi numit si un transportator intre server si client.
-Acest protocol este ofera o cale de a comunica cu daemonul pe un limbaj comun.
-In cazul unui website as putea spune ca protocolul HTTP este necesar, fara el nu s-ar putea face comunicarea dintre daemon(apache) si client(browser, telnet).
-Una dintre metodele prin care se poate face un request cu ajutorul HTTP este metoda GET fiind numita si HTTP request.
-In urma folosirii comenzii GET comunicatia cu daemonul este compusa din 3 segmente: 
-	1.HTTP Request(este alcatuita din request line-ul, adica cea prin care ceri efecti un document si request header prin care clientul trimite informatii aditionale legate de request line pentru ca daemonul sa faca diferenta in momentul in care acesta foloseste mai multe domenii simultan.)
-	2.HTTP response headers(sunt informatii despre documentul html trimise ca raspuns de catre daemon clientului).
-	3.HTTP response body (este continutul documentului trimis ca raspuns de catre daemon).
+HTTP este un protocol stateless. Numele vine de la Hyper Text Transfer Protocol, acesta fiind un protocol pentru transmiterea informatiilor din WWW. 
+Este numit stateless deoarece fiecare comanda solicitata este executata independent, fara a se tine cont de cererile executate inainte, tratand fiecare cerere pentru o pagina web ca o conexiune unica.
+Se mai poate spune ca la fiecare conectiune dintre client si server toate informatiile se pierd la momentul cand tranzactia se termina.
+Un protocol stateless nu necesita strangerea de informatii despre un user pe durata comunicarii intre server si client.
+Datorita acestui protocol comunicarea dintre client si server se face cu minimul de cantitate de date care trebuie transferata.
+In cazul unei aplicatii web exista o nevoie de monitorizare si stocare a informatiilor useului ceea ce un protocol stateless nu poate face, dar exista solutii cum ar fi cookie-urile, sesiunile sau chiar variabilele.
+Pentru a comunica prin acest protocol exista anumite metode de solicitare. 
+Aceste metode sunt:
+1.GET folosita pentru a obtine date de la server.
+2.HEAD este folosita atunci cand userul doreste sa afle informatii despre head-ul documentului, cum ar fi charset-ul, lungimea continutului,etc.
+3.Metoda DELETE se foloseste pentru a sterge date.
+
+
+
+
+
+	
 									
 

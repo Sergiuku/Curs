@@ -1,21 +1,11 @@
-Însă și GET însuși are semnificația pe care ai întâlnit-o în capitolul trecut doar într-un anumit context
-semantic.
-1. Care este acest context semantic?
-In contextul in care cerem daemonului o resursa, adica in request line.
+﻿1.In contextul in care cerem daemonului o resursa, adica in request line.
 
+2.Atunci cand se configureaza apache, fiind vorba de fisierul principal httpd.conf, acesta fiind singurul fisier care este incarcat automat de apache.
 
-2. În ce context semantic are semantica întâlnită constructul Include?
-Atunci cand se configureaza apache, fiind vorba de fisierul principal httpd.conf, acesta fiind singurul fisier care este incarcat automat de apache.
+3.Atunci cand protocolul este folosit in comunicarea web.
 
-
-3. În ce context semantic are sens comunicarea în limbajul (în protocolul) HTTP?
-Atunci cand protocolul este folosit in comunicarea web.
-
-
-Determină contextul semantic în care următoarele constructe au semantica pe care o intuiești ca
-cunoscător al limbajului HTML:
-4. <td> - Atunci cand creezi o celula, un table.
-5. <tr> - Cand creezi un tabel cu randuri.
+4. <td> - Cand se creeaza o celula, un table.
+5. <tr> - Cand se creeaza un tabel cu randuri.
 6. <body> - Atunci cand stabilesti continutul unei pagini web.
-7. <html> - La creearea unui document html.
+7. <html> - La crearea unui document html.
 8. href - In contextul in care introduci un url.

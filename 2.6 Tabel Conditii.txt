@@ -1,6 +1,3 @@
-Fa un tabel de adevar similar cu tabelul 2.2, în care calculezi valorile echivalentelor expresiilor :(A_B)
-respectiv :(A ^ B), echivalente pe care le gase?ti aplicând legile lui De Morgan enun?ate mai sus.
-
 
 !A	!B	!A^B	!AvB
 T	T	F	F

@@ -1,8 +1,3 @@
- Calculeaza valorile de adevar a urmatoarelor expresii:
-  1. T^!F = TRUE;
- 2. !(TvF)^T = FALSE;
-3. T ^A_!(T ^B) pentru toate valorile posibile ale lui A ?i B. Creaza tabelul adevarului cu 5 coloane:
-A, B, T ^ A, !(T ^ B), ?i T ^ A v!(T ^ B)
 
 A	B	T^A	!(T^B)	T^Av!(T^B)
 T	T	T	F	T

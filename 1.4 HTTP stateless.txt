@@ -1,4 +1,4 @@
-HTTP este un protocol stateless. Numele vine de la Hyper Text Transfer Protocol, acesta fiind un protocol pentru transmiterea informatiilor din WWW. 
+HTTP este un protocol stateless. Numele vine de la Hyper Text Transfer Protocol, acesta fiind un protocol pentru transmiterea informatiilor din WWW (WORLD WIDE WEB).
 Este numit stateless deoarece fiecare comanda solicitata este executata independent, fara a se tine cont de cererile executate inainte, tratand fiecare cerere pentru o pagina web ca o conexiune unica.
 Se mai poate spune ca la fiecare conectiune dintre client si server toate informatiile se pierd la momentul cand tranzactia se termina.
 Un protocol stateless nu necesita strangerea de informatii despre un user pe durata comunicarii intre server si client.

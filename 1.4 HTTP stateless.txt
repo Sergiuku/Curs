@@ -1,15 +1,16 @@
-HTTP este un protocol stateless. Numele vine de la Hyper Text Transfer Protocol, acesta fiind un protocol pentru transmiterea informatiilor din WWW (WORLD WIDE WEB).
-Este numit stateless deoarece fiecare comanda solicitata este executata independent, fara a se tine cont de cererile executate inainte, tratand fiecare cerere pentru o pagina web ca o conexiune unica.
-Se mai poate spune ca la fiecare conectiune dintre client si server toate informatiile se pierd la momentul cand tranzactia se termina.
-Un protocol stateless nu necesita strangerea de informatii despre un user pe durata comunicarii intre server si client.
+HTTP este un protocol stateless. Numele vine de la Hyper Text Transfer Protocol, acesta fiind un protocol pentru transmiterea informatiilor oricare ar fi ele, un fisier, sunet,animatie sau video  din WWW (WORLD WIDE WEB). 
+WWW este un sistem de documente si informatii de tip text legate intre ele care poti fi accesate prin aceasta retea. Afisarea acestor documente si informatii se face cu ajutorul unui browser(client).
+E stateless deoarece fiecare comanda solicitata este executata independent, fara a se tine cont de cererile executate inainte, tratand fiecare cerere pentru o pagina web ca o conexiune unica.
+Se mai poate spune ca la fiecare conexiune dintre client si server toate informatiile se pierd la momentul cand tranzactia se termina.
+HTTP nu necesita strangerea de informatii despre un user pe durata comunicarii intre server si client.
 Datorita acestui protocol comunicarea dintre client si server se face cu minimul de cantitate de date care trebuie transferata.
 In cazul unei aplicatii web exista o nevoie de monitorizare si stocare a informatiilor useului ceea ce un protocol stateless nu poate face, dar exista solutii cum ar fi cookie-urile, sesiunile sau chiar variabilele.
 Pentru a comunica prin acest protocol exista anumite metode de solicitare. 
-Aceste metode sunt:
+Cateva din aceste metode sunt:
 1.GET folosita pentru a obtine date de la server.
 2.HEAD este folosita atunci cand userul doreste sa afle informatii despre head-ul documentului, cum ar fi charset-ul, lungimea continutului,etc.
 3.Metoda DELETE se foloseste pentru a sterge date.
-
+4.Metoda POST este folosita pentru a trimite date la server.
 
 
 

@@ -4,8 +4,15 @@
 
 3.Atunci cand protocolul este folosit in comunicarea web.
 
-4. <td> - Cand se creeaza o celula, un table.
-5. <tr> - Cand se creeaza un tabel cu randuri.
+4. <td> - In contextul in care cream un tabel are semantica de celula.
+5. <tr> - In contextul in care cream un tabel are semantica de rand in acel tabel.
 6. <body> - Atunci cand stabilesti continutul unei pagini web.
-7. <html> - La crearea unui document html.
-8. href - In contextul in care introduci un url.
+7. <html> - Pentru a defini semnificatia, structura sau stitlul unui cuvant, la unei linii sau a unei bucati de text.
+8. href - In contexul unui buton are semantica de a defini o resursa indicata de un link.
+
+
+Contextul a ceva înseamnă în ce punem acel ceva pentru a avea o anumită semantică. De exemplu,
+sarea pusă în contextul gătitului are semantica de condiment, dar dacă o pui pe o rană, are semantica de
+ceva care provoacă durere. Cu alte cuvinte, context înseamnă circumstanțe sau mediul înconjurător.
+Analog, “HTTP/1.1” are semantica de “protocolul și versiunea folosită” în contextul request line-ului
+HTTP al unui request HTTP.

@@ -7,5 +7,5 @@
 
 Partea II
 
-Într-un input valid, B este mereu B.
+Într-un input valid, B este mereu intre A si C.
 

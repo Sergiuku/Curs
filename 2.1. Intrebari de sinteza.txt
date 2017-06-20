@@ -6,8 +6,8 @@
 
 4. <td> - In contextul in care cream un tabel are semantica de celula.
 5. <tr> - In contextul in care cream un tabel are semantica de rand in acel tabel.
-6. <body> - Atunci cand stabilesti continutul unei pagini web.
-7. <html> - Pentru a defini semnificatia, structura sau stitlul unui cuvant, la unei linii sau a unei bucati de text.
+6. <body> - De a stabili continutul paginii web
+7. <html> - De a defini semnificatia, structura sau stitlul unui cuvant, la unei linii sau a unei bucati de text.
 8. href - In contexul unui buton are semantica de a defini o resursa indicata de un link.
 
 

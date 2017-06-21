@@ -1,0 +1,22 @@
+<!-- Partea I
+
+Raspunsuri:
+    
+    2. Liniile 5(afiseaza 'aceasta este o informatie secreta')  si 6 (afiseaza 'vizibila doar utizilitatorilor autentificati') trebuie sa fie executate numai cand parola este corecta.
+			
+	
+
+Codul corect:
+
+daca parola este corecta
+	afiseaza 'autentificat'
+	afiseaza 'aceasta este o informatie secreta'
+	afiseaza 'vizibila doar utizilitatorilor autentificati'
+altfel 
+    afiseaza 'parola este gresita'
+   
+	
+
+							 
+							  
+										 

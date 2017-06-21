@@ -1,0 +1,1 @@
+In fluxul liniar cand apare conditia se produce o intrerupere. Conditia face parte din fluxul liniar, iar aceasta va fi executata de fiecare data pentru a se continua fluxul liniar.

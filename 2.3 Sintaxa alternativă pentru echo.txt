@@ -1,0 +1,3 @@
+Raspuns: 1. Echo va fi apelat de trei ori.
+
+

@@ -1,0 +1,7 @@
+
+Raspuns:
+ Pentru a fi administrator trebuie sa fii autentificat. Codul va verifica prima data daca esti autentificat sau nu.
+ Dupa verificarea conditie(daca esti autentificat) va trece la urmatoarea conditie pentru a verifica daca esti administrator.
+ Nefiind autentificat nu mai are de ce sa verfice daca este administrator. 
+ Avem urmatoarele posibilitati: Autentificat si administrator; autentificat fara a fi administrator; neautentificat.
+ Ordinea in care am scris posibilitatile va fi si ordinea in care php-ul va verifica conditiile.

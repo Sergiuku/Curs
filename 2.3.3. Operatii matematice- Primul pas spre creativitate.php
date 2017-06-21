@@ -1,5 +1,5 @@
 <?php
-/**
+/** Partea 1
  * variabile
  * r - raza cercului
  * a - lungimea laturii patratului
@@ -20,18 +20,11 @@ $r_perim = 2 * ($m + $n);
 echo 'Aria unui cerc de raza r = ', $r,  ' este ', $c_area, '<br>';
 echo 'Diametrul sau este de ', $r * 2, '<br>';
 echo 'Dreptunghiul cu laturile ', $m, ' si ', $n, ' are perimetrul ', $r_perim, '<br>';
-/*
- * l = latura
- * Cubul are l = 3
- * af = aria fetei
- * at = aria totala
+
+
+
+/* Partea II
  * v = volumul
  */
-$l = 3;
-$af = $l * $l;
-$at = 6 * ($l * $l);
-$v = $l * $l * $l;
-echo 'Latura cubului este l = ', $l, '<br>';
-echo 'Aria fetei este ', $af, '<br>';
-echo 'Aria totala este ', $at, '<br>';
+$v = $a * $a * $a;
 echo 'Volumul cubului este ', $v, '<br>';

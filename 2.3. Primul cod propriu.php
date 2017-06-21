@@ -7,4 +7,4 @@ echo 'Valoarea lui PI este ',$pi;
 
 
 
-// In primul rand, se atribuie variabilei foo valoarea hello world care este un string, dupa care se printeaza variabila. Echo va fi apelat o singura data.
+//Echo va fi apelat o singura data. Mai intai se va salva valoarea 'Hello world' in variabila $foo dupa care se va afisa valoarea salavata in variabila $foo.

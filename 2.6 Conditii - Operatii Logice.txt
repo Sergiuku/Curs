@@ -1,4 +1,9 @@
+1.
+T^!F =TRUE
 
+2.!(TvF)^T = FALSE
+
+3.
 A	B	T^A	!(T^B)	T^Av!(T^B)
 T	T	T	F	T
 T	F	T	T	T

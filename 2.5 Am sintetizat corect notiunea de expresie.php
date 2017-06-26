@@ -7,8 +7,8 @@ echo 'Comparatie dintre expresie matematica si un string: ', var_dump((2*3)+5 ==
 // Partea II:
 
 /*
- *Raspuns: Se face o comparatie dintre un int(4) si un string('5'). Aceasta comparatie va fi falsa.
- *			Comparatia dintre cele 2 va fi valoarea data variabilei $foo.
+ *Raspuns: Se face o comparatie dintre un int(4) si un string('5'). Aceasta comparatie va fi falsa. 
+ *			Comparatia dintre cele 2 va fi o valoarea bolean data variabilei $foo.
  */
 
 

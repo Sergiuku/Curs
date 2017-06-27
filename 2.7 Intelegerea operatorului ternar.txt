@@ -15,7 +15,7 @@ Linia 4:Conditia if fiind adevarata se va afisa 'administrator'.
 
 Raspuns 2:
 Daca $rol are alta valoare, conditiile vor fi false. 
-Conditia $rol === 'administrator' va fi falsa, iar conditia if va fi 'test' === 'test2'.
+Expresia $rol === 'administrator' va fi falsa, iar conditia if va fi 'test' === 'test2'.
 Neindeplindu-se conditia nu se va mai afisa nimic pentru ca numai atunci cand conditiile sunt adevarate se va afisa 'administrator'.
 
 

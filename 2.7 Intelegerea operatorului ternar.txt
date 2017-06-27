@@ -1,6 +1,6 @@
 Partea I
 Raspuns:
-	 Variabila '$este_administrator' va primi o valoare pe baza conditiei ce urmeaza dupa =.
+	 Expresia '$este_administrator' va primi o valoare pe baza expresiei ce urmeaza dupa =.
 Expresia este 'administrator' strict egal cu $rol. Ea va fi evaluata boolean. Daca conditia va fi TRUE, rezultatul expresiei va fi valoarea de dupa ?, iar daca va fi FALSE atunci rezultatul expresiei va fi de dupa :
 Aici conditia va fi true, asa ca rezultatul va fi TRUE.
 

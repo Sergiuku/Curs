@@ -9,7 +9,7 @@ Raspuns 1:
 Linia 1: specificam ca deschidem un script php.
 Linia 2: Se atribuie variabilei $rol valoarea 'administrator'.
 Linia 3: Avem o conditie evaluata prin constructul if, iar in aceasta se va folosi si operatorul ternar.
-	In primul rand se va evalua conditia daca $rol === 'administrator', conditia fiind TRUE rezultatul expresiei va fi 'test'.
+	In primul rand se va evalua expresia daca $rol === 'administrator', conditia fiind TRUE rezultatul expresiei va fi 'test'.
 	Dupa ce conditia de mai sus a fost evaluata se va trece la evaluarea conditiei 'test' === ($rol === 'administrator' ? 'test' : 'test2')), rezultatul conditiei de mai sus fiind test atunci si aceasta conditie este adevara, rezultatul fiin 'test' === 'test'.
 Linia 4:Conditia if fiind adevarata se va afisa 'administrator'.
 

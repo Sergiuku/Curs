@@ -1,0 +1,21 @@
+Partea I
+Raspuns:
+	 Variabila '$este_administrator' va primi o valoare pe baza conditiei ce urmeaza dupa =.
+Conditia este 'administrator' strict egal cu $rol. Ea va fi evaluata boolean. Daca conditia va fi TRUE, rezultatul expresiei va fi valoarea de dupa ?, iar daca va fi FALSE atunci rezultatul expresiei va fi de dupa :
+Aici conditia va fi true, asa ca rezultatul va fi TRUE.
+
+Partea II
+Raspuns 1:
+Linia 1: specificam ca deschidem un script php.
+Linia 2: Se atribuie variabilei $rol valoarea 'administrator'.
+Linia 3: Avem o conditie evaluata prin constructul if, iar in aceasta se va folosi si operatorul ternar.
+	In primul rand se va evalua conditia daca $rol === 'administrator', conditia fiind TRUE rezultatul expresiei va fi 'test'.
+	Dupa ce conditia de mai sus a fost evaluata se va trece la evaluarea conditiei 'test' === ($rol === 'administrator' ? 'test' : 'test2')), rezultatul conditiei de mai sus fiind test atunci si aceasta conditie este adevara, rezultatul fiin 'test' === 'test'.
+Linia 4:Conditia if fiind adevarata se va afisa 'administrator'.
+
+Raspuns 2:
+Daca $rol are alta valoare, conditiile vor fi false. 
+Conditia $rol === 'administrator' va fi falsa, iar conditia if va fi 'test' === 'test2'.
+Neindeplindu-se conditia nu se va mai afisa nimic pentru ca numai atunci cand conditiile sunt adevarate se va afisa 'administrator'.
+
+

@@ -1,7 +1,7 @@
 Partea I
 Raspuns:
 	 Expresia '$este_administrator' va primi o valoare pe baza expresiei ce urmeaza dupa =.
-Expresia 'administrator'=== $rol ? TRUE : FALSE. Ea va fi evaluata boolean. Daca conditia va fi TRUE, rezultatul expresiei va fi valoarea de dupa ?, iar daca va fi FALSE atunci rezultatul expresiei va fi de dupa :
+Expresia este 'administrator'=== $rol ? TRUE : FALSE. Ea va fi evaluata boolean. Daca conditia va fi TRUE, rezultatul expresiei va fi valoarea de dupa ?, iar daca va fi FALSE atunci rezultatul expresiei va fi de dupa :
 Aici conditia va fi true, asa ca rezultatul va fi TRUE.
 
 Partea II

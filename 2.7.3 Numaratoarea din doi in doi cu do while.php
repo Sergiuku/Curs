@@ -8,4 +8,4 @@ do {
 
 
 /* Partea II
- * 
+ * Numarul ales este -1, programul numara pana la -3

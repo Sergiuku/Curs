@@ -1,3 +1,4 @@
+Partea I
 <?php
 $var = 23;
 do {
@@ -6,3 +7,5 @@ do {
 } while($var >= -1);
 
 
+/* Partea II
+ * 

@@ -1,6 +1,7 @@
 <?php
-$number = -6;
+$n = 6;
+if ($n > 0) $n = -$n;
 do {
-    echo "$number este " . ( ($number % 2) ? 'impar' : 'par' ).'.<br>';
-    $number++;
-} while($number <= 6);
+    echo "$n este " . ( ($n % 2) ? 'impar' : 'par' ).'.<br>';
+    $n++;
+} while($n <= 6);

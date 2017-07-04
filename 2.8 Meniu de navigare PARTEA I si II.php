@@ -14,7 +14,4 @@ if(TRUE === empty($menu)) {
 
 </ul>
 
-<?php 
-} 
-?>
 

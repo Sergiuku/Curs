@@ -1,5 +1,5 @@
 <?php
-$menu = array('T', 'B', 'C');
+$menu = array('Home', 'Contact', 'Despre');
 if(TRUE === empty($menu)) {
 echo 'Meniu Inexistent.';
 } else {

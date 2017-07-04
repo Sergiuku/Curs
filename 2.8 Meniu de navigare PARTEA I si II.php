@@ -4,6 +4,7 @@ if(TRUE === empty($menu)) {
 	echo 'Meniu Inexistent.';
 } else {
 ?>
+
 <ul>
 <?php
     foreach ($menu as $category) {
@@ -11,7 +12,9 @@ if(TRUE === empty($menu)) {
     }
 
 ?>
+
 </ul>
+
 <?php 
 } 
 ?>

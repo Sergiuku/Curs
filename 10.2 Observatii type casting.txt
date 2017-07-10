@@ -8,7 +8,7 @@ Linia7: Se face conversia de la array la string, afisandu-se "Array".
 Linia8: Se face conversia intr-o expresie boolean evaluata ca falsa. Va fi evaluata ca falsa din cauza constructului array care este gol, iar un array cu 0 elemente este considerat FALSE.
 Linia9: Conversia facuta dintr-un array intr-o expresie boolean este evaluata ca adevarata deoarece '' din array() este un string.
 Linia10: In variabila $test se incearca conversia unui string ca float.
-Linia11: Pe baza variabilei de mai sus, $test, rezultatul va fi float(0) deoarece nu se poate converti caractere la numere.
+Linia11: Pe baza variabilei de mai sus, $test, se va face conversia de la string la float.
 Linia12: Expresia booleana (bool)5 este evaluata ca TRUE. Orice int care nu este 0 este considerat TRUE.
 Linia13: Conversia in expresie booleana va fi evaluata ca FALSE deoarece un int 0 va fi tot timpul evaluat ca False.  
 Linia14: Si aceasta expresie booleana va fi evaluata ca TRUE deoarece un int fie el pozitiv sau negativ va fi evaluat ca TRUE

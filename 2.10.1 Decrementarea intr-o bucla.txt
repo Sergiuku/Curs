@@ -1,0 +1,21 @@
+Partea I
+
+Linia 2: Variabila $the_answer primeste valoarea 42.
+Linia 3: Variabila $foo primeste valoarea 0.
+Linia 4: Se face o bucla while in care conditia este variabila $the_answer decrementata cu 1.
+Linia 5: In interiorul buclei, variabila $foo primeste valoarea variabilei $the_answer decrementata.
+Linia 7: Se afiseaza variabila $foo. Rezultatul va fi 861. 
+S-a ajuns la acest rezultat astfel: 
+-In bucla while se va verifica conditia $the_answer--(ex:42-1) dupa care $foo va primi valoarea decrementata(ex:41).
+-Bucla va continua cu verificarea conditiei pana ce variabila $the_answer va ajunge la 0, iar dupa fiecare verificare variabila $foo va primi o noua valoare. 
+Noua valoare fiind alcatuita din vechea valoare + valoarea noua decrementata. (ex:$the_answer => 42-1=41, $foo += 41; 41-1=40, $foo +=81).
+
+Partea II
+
+<?php
+$the_answer = 42;
+$foo = 0;
+while(--$the_answer) {
+    $foo += $the_answer;
+}
+echo $foo;

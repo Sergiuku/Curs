@@ -1,0 +1,9 @@
+PARTEA I
+
+Daca nu exista 'a' sau 'b' executa blocul de instructiuni. 
+
+PARTEA II
+
+if(empty($_GET['a']) && empty($_GET['b']))
+
+Explicatie: Daca 'a' si 'b' nu exista executa blocul de instructiuni.

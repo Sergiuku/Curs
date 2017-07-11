@@ -1,14 +1,14 @@
 Folosim functia var_dump pentru afisa valoarea si tipul unei variabile.
-Linia2: Este vorba de tipul de date scalare, fiind un integer. Intra in sfera acestora deoarece un int contine numerele intregi.
+Linia2: Php interpreteaza 5-ul ca si un integer.
 Linia3: Folosim (string) pentru a determina tipul de conversie, iar aici il folosim pentru ca numarul 5 sa fie convertit intr-un string. 
 Linia4: Se va afisa string(4) "True".Php ne spune ca este vorba de un string,(4) in afisaj este numarul din cate caractere este alcatui string-ul. Folosind apostrofurile ('True') ii spunem Php-ului ca facem referire la un string si trebuie sa-l ia asa cum apare. 
-Linia5: Se va face conversia intr-o expresie boolean ce va fi evaluata ca TRUE. Va fi evaluata TRUE deoarece 'TRUE' este un string format din 4 caractere.
+Linia5: Se va face conversia intr-o expresie boolean ce va fi evaluata ca TRUE. Va fi evaluata TRUE deoarece stringul nu este gol.
 Linia6: Conversia va fi intr-o expresie booleana evaluata ca fiind falsa deoarece stringul '' este gol, iar un string gol este considerat fals.
 Linia7: Se face conversia de la array la string, afisandu-se "Array". 
 Linia8: Se face conversia intr-o expresie boolean evaluata ca falsa. Va fi evaluata ca falsa din cauza constructului array care este gol, iar un array cu 0 elemente este considerat FALSE.
-Linia9: Conversia facuta dintr-un array intr-o expresie boolean este evaluata ca adevarata deoarece '' din array() este un string.
-Linia10: In variabila $test se incearca conversia unui string ca float.
-Linia11: Pe baza variabilei de mai sus, $test, se va face afisa conversia mai sus facuta, rezultatul fiind float(0). (0) deoarece nu exista nici un numar. 'False' nu poate fi transformat intr-un numar.
+Linia9: Conversia facuta dintr-un array intr-o expresie boolean va fi evaluata ca adevarata deoarece array-ul nu este gol.
+Linia10: Variabila $test are ca valoare float-ul rezulta in urma conversiei (float)'False'.
+Linia11:Var_dump afiseaza detaliile despre variabila $test.
 Linia12: Expresia booleana (bool)5 este evaluata ca TRUE. Orice int care nu este 0 este considerat TRUE.
 Linia13: Conversia in expresie booleana va fi evaluata ca FALSE deoarece un int 0 va fi tot timpul evaluat ca False.  
 Linia14: Si aceasta expresie booleana va fi evaluata ca TRUE deoarece un int fie el pozitiv sau negativ va fi evaluat ca TRUE

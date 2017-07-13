@@ -1,6 +1,6 @@
 PARTEA I
 
-Daca nu exista 'a' sau 'b' executa blocul de instructiuni. 
+Daca 'a' nu este setat sau 'b' nu este setat.
 
 PARTEA II
 

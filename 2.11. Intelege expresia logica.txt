@@ -6,4 +6,4 @@ PARTEA II
 
 if(empty($_GET['a']) && empty($_GET['b']))
 
-Explicatie: Daca 'a' si 'b' nu exista executa blocul de instructiuni.
+Explicatie: Daca 'a' este gol si 'b' este gol.

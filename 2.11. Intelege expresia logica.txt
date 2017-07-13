@@ -4,6 +4,6 @@ Daca 'a' nu este setat sau 'b' nu este setat.
 
 PARTEA II
 
-if(empty($_GET['a']) && empty($_GET['b']))
+if(!isset($_GET['a']) && !isset($_GET['b']))
 
-Explicatie: Daca 'a' este gol si 'b' este gol.
+Explicatie: Daca 'a' nu este setat si 'b' nu este setat.

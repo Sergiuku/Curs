@@ -37,6 +37,8 @@ if (isset($_GET['a']) && isset($_GET['b'])) {
             if (isset($op)) {
                 break;
             }
+        default:
+            echo "Trebuie specificat unul dintre urmatorii operatori: add,sub,mult,div,mod";
     }
 } else {
     echo 'Introdu valorile a si b.';

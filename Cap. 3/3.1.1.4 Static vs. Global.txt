@@ -1,0 +1,6 @@
+1.Declararea unei variabile in scope-ul global nu are sens deoarece aceasta este deja statica, adica nu va fi stearsa dupa ce este initializata.
+
+2.Declararea unei variabile globale intr-o functie face ca variabila sa fie adaugata in scope-ul global si va fi folosita local, in functie pana la executia acesteia.
+Dupa executarea functiei, variabila va fi stearsa din scope-ul local si pastrata in scope-ul global.
+	O variabila declarata static in interiorul functiei va ramane numai in scope-ul local.
+	Nu putem produce 2 variabile atat global cat si locala deoarece am crea un conflict.  

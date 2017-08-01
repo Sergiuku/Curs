@@ -1,0 +1,5 @@
+Vom incepe executia de la echo foo(bar(foo(foo(38))+2)) si il vom separa pe rand.
+Prima functie apelata foo(38) = 39; (Se va folosi functia foo($a) { return $a + 1 }
+A 2 a functie apelata este foo(foo(38)) = 39 + 1 = 40; (Aceeasi functie folosita)
+A 3 a functie apelata este bar(foo(foo(38))+2) = (40 + 2) * 42 = 1764; (Se foloseste functia bar($b) { return $b *42 }
+A 4 a functie apelata este foo(bar(foo(foo(38))+2)) = 1764 + 1 = 1765; (Functia foo mai sus mentionata)

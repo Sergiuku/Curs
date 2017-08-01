@@ -1,0 +1,28 @@
+În acest capitol ai învățat o grămadă de termeni noi. Folosind cuprinsul de la pagina 5, ia fiecare
+secțiune a acestui capitol la rând, și la fiecare scrie cel puțin un cuvânt sau expresie, fie el în română sau
+în engleză. La termenii în română, scrie și corespondenții englezești.
+Gândește-te cât știai înainte de a citi acest capitol. Cum te simți? Eu m-aș simți mândru. Felicitări!
+
+2.1 - Metalimbaj - metalanguage
+2.2 - Echo, comanda pentru afisare.
+2.3 
+	2.3.1 - Variabila(variable), retine o valoare, o cantitate de informatie ce poate fi reutilizata.
+	2.3.2 - Int, toate numere intregi, pozitive si negative ce pot fi date unei variabile.
+	2.3.3 - Operatii matematice, operatie facuta unei valori a unei variabile.
+2.4 - Alogrithm, un set de instructiuni, modele prin care atingi un anumit task.
+2.5 -
+2.6 -
+2.7 -
+2.8. -
+2.9 -
+2.10
+	2.10.1 -
+	2.10.2 -
+	2.10.3 -
+	2.10.4 -
+	2.10.5 -
+	2.10.6 -
+2.11 -
+2.12 -
+2.13 -
+2.14 -

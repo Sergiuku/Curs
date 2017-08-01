@@ -1,0 +1,4 @@
+In cazul variabilei $input = ''; nu se va apela functia pass_is_correct() deoarece dupa verificarea variabilei, 
+  php va verifica constructul if in care conditia este o expresie boolean. Se va verifica prima conditie, 
+ !empty($input) care va fi falsa deoarece un string gol este considerat un string vid.
+Expresia boolean cere ca ambele sa fie TRUE, iar din cauza primei conditii care este falsa nu va trece la verificarea functiei pass_is_correct(). 

@@ -1,31 +1,46 @@
 <?php
 if (isset($_POST['submit']) && !empty(isset($_POST['submit']))) {
-    if (isset($_POST['a']) && isset($_POST['op']) && isset($_POST['b']) && $_POST['a'] && $_POST['op'] && $_POST['b']) {
-        switch ($_POST['op']) {
+    if (isset($_POST['a']) && isset($_POST['b']) && !empty($_POST['a']) && !empty($_POST['b'])) {
+        $op = NULL;
+        if (isset($_POST['op'])) {
+            $op = $_POST['op'];
+        }
+        switch ($op) {
+            case NULL:
+            case '':
+                if (trim($op) === '') {
+                    $op = NULL;
+                }
             case 'add':
-                echo (int)$_POST['a'], ' + ', (int)$_POST['b'], ' = ', $_POST['a'] + $_POST['b'];
-                break;
+                echo (int)$_POST['a'], ' + ', (int)$_POST['b'], ' = ', (int)$_POST['a'] + (int)$_POST['b'], '<br>';
+                if (isset($op)) {
+                    break;
+                }
+
             case 'sub':
-                echo (int)$_POST['a'], ' - ', (int)$_POST['b'], ' = ', $_POST['a'] - $_POST['b'];
-                break;
+                echo (int)$_POST['a'], ' - ', (int)$_POST['b'], ' = ', (int)$_POST['a'] - (int)$_POST['b'], '<br>';
+                if (isset($op)) {
+                    break;
+                }
             case 'mul':
-                echo (int)$_POST['a'], ' * ', (int)$_POST['b'], ' = ', $_POST['a'] * $_POST['b'];
-                break;
+                echo (int)$_GET['a'], ' * ', (int)$_GET['b'], ' = ', (int)$_GET['a'] * (int)$_GET['b'], '<br>';
+                if (isset($op)) {
+                    break;
+                }
             case 'div':
-                echo (int)$_POST['a'], ' / ', (int)$_POST['b'], ' = ', $_POST['a'] / $_POST['b'];
-                break;
+                echo (int)$_POST['a'], ' / ', (int)$_POST['b'], ' = ', (int)$_POST['a'] / (int)$_POST['b'], '<br>';
+                if (isset($op)) {
+                    break;
+                }
             case 'mod':
-                echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', $_POST['a'] % $_POST['b'];
-                break;
-            default:
-                echo (int)$_POST['a'], ' + ', (int)$_POST['b'], ' = ', $_POST['a'] + $_POST['b'], '<br>';
-                echo (int)$_POST['a'], ' - ', (int)$_POST['b'], ' = ', $_POST['a'] - $_POST['b'], '<br>';
-                echo (int)$_POST['a'], ' * ', (int)$_POST['b'], ' = ', $_POST['a'] * $_POST['b'], '<br>';
-                echo (int)$_POST['a'], ' / ', (int)$_POST['b'], ' = ', $_POST['a'] / $_POST['b'], '<br>';
-                echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', $_POST['a'] % $_POST['b'], '<br>';
+                echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', (int)$_POST['a'] % (int)$_POST['b'], '<br>';
+                if (isset($op)) {
+                    break;
+                }
+
         }
     } else {
-        echo 'Trebuie introdus a si b';
+        echo 'Introdu valorile a si b.';
     }
 }
 ?>

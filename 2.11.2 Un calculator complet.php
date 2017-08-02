@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_GET['a']) && isset($_GET['b'])) {
     $op = NULL;
     if (isset($_GET['op'])) {
@@ -6,9 +7,10 @@ if (isset($_GET['a']) && isset($_GET['b'])) {
     }
     switch ($op) {
         case NULL:
+        case '':
         default:
-            if($op==FALSE || $op!='add') {
-                echo "Trebuie specificat unul dintre urmatorii operatori: add,sub,mult,div,mod", "<br>";
+            echo "Trebuie specificat unul dintre urmatorii operatori: add,sub,mult,div,mod", "<br>";
+            if(isset($op)) {
                 break;
             }
         case 'add':
@@ -36,7 +38,6 @@ if (isset($_GET['a']) && isset($_GET['b'])) {
             if (isset($op)) {
                 break;
             }
-
     }
 } else {
     echo 'Introdu valorile a si b.';

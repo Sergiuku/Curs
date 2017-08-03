@@ -2,7 +2,7 @@
 
 if (isset($_GET['a']) && isset($_GET['b'])) {
     $op = NULL;
-    if (isset($_GET['op'])) {
+    if (isset($_GET['op']) && !empty($_GET['op'])) {
         $op = $_GET['op'];
     }
     switch ($op) {

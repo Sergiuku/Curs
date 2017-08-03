@@ -4,8 +4,8 @@ if (isset($_GET['a']) && isset($_GET['b'])) {
     $op = NULL;
     if (isset($_GET['op'])) {
         $op = $_GET['op'];
-        if($op===''){
-            $op=' ';
+        if ($op === '') {
+            $op = ' ';
         }
     }
     switch ($op) {

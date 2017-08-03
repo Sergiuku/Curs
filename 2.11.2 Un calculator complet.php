@@ -1,12 +1,16 @@
 <?php
 
-if (isset($_GET['a']) && isset($_GET['b']) && !empty($_GET['a']) && !empty($_GET['b'])) {
+if (isset($_GET['a']) && isset($_GET['b'])) {
     $op = NULL;
-    if (isset($_GET['op']) && !empty($_GET['op'])) {
+    if (isset($_GET['op'])) {
         $op = $_GET['op'];
+        if($op===''){
+            $op=' ';
+        }
     }
     switch ($op) {
         case NULL:
+
         case 'add':
             echo (int)$_GET['a'], ' + ', (int)$_GET['b'], ' = ', (int)$_GET['a'] + (int)$_GET['b'], '<br>';
             if (isset($op)) {

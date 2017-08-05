@@ -17,11 +17,9 @@ if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['submit'])) {
             echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', (int)$_POST['a'] % (int)$_POST['b'], '<br>';
             break;
         default:
-            echo "Trebuie specificat unul dintre urmatorii operatori: add,sub,mult,div,mod", "<br>";
+            echo 'Trebuie specificat a,b sau operatul.', "<br>";
             break;
     }
-} else {
-    echo 'Introdu valorile a si b.';
 }
 ?>
 <html>

@@ -1,29 +1,27 @@
 <?php
-if (isset($_POST['submit']) && !empty(isset($_POST['submit']))) {
-    if (isset($_POST['a']) && isset($_POST['b']) && !empty($_POST['a']) && !empty($_POST['b'])) {
-        switch ($_POST['op']) {
-            case 'add':
-                echo (int)$_POST['a'], ' + ', (int)$_POST['b'], ' = ', (int)$_POST['a'] + (int)$_POST['b'], '<br>';
-                break;
-            case 'sub':
-                echo (int)$_POST['a'], ' - ', (int)$_POST['b'], ' = ', (int)$_POST['a'] - (int)$_POST['b'], '<br>';
-                break;
-            case 'mul':
-                echo (int)$_POST['a'], ' * ', (int)$_POST['b'], ' = ', (int)$_POST['a'] * (int)$_POST['b'], '<br>';
-                break;
-            case 'div':
-                echo (int)$_POST['a'], ' / ', (int)$_POST['b'], ' = ', (int)$_POST['a'] / (int)$_POST['b'], '<br>';
-                break;
-            case 'mod':
-                echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', (int)$_POST['a'] % (int)$_POST['b'], '<br>';
-                break;
-            default:
-                echo "Trebuie specificat unul dintre urmatorii operatori: add,sub,mult,div,mod", "<br>";
-                break;
-        }
-    } else {
-        echo 'Introdu valorile a si b.';
+if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['submit'])) {
+    switch ($_POST['op']) {
+        case 'add':
+            echo (int)$_POST['a'], ' + ', (int)$_POST['b'], ' = ', (int)$_POST['a'] + (int)$_POST['b'], '<br>';
+            break;
+        case 'sub':
+            echo (int)$_POST['a'], ' - ', (int)$_POST['b'], ' = ', (int)$_POST['a'] - (int)$_POST['b'], '<br>';
+            break;
+        case 'mul':
+            echo (int)$_POST['a'], ' * ', (int)$_POST['b'], ' = ', (int)$_POST['a'] * (int)$_POST['b'], '<br>';
+            break;
+        case 'div':
+            echo (int)$_POST['a'], ' / ', (int)$_POST['b'], ' = ', (int)$_POST['a'] / (int)$_POST['b'], '<br>';
+            break;
+        case 'mod':
+            echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', (int)$_POST['a'] % (int)$_POST['b'], '<br>';
+            break;
+        default:
+            echo "Trebuie specificat unul dintre urmatorii operatori: add,sub,mult,div,mod", "<br>";
+            break;
     }
+} else {
+    echo 'Introdu valorile a si b.';
 }
 ?>
 <html>

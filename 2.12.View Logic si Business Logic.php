@@ -2,19 +2,18 @@
 if (isset($_POST['submit']) && !empty(isset($_POST['submit']))) {
     if (isset($_POST['a']) && isset($_POST['b']) && !empty($_POST['a']) && !empty($_POST['b'])) {
         switch ($_POST['op']) {
-            Case 'none':
             case 'add':
                 echo (int)$_POST['a'], ' + ', (int)$_POST['b'], ' = ', (int)$_POST['a'] + (int)$_POST['b'], '<br>';
                 break;
             case 'sub':
                 echo (int)$_POST['a'], ' - ', (int)$_POST['b'], ' = ', (int)$_POST['a'] - (int)$_POST['b'], '<br>';
-               break;
+                break;
             case 'mul':
                 echo (int)$_POST['a'], ' * ', (int)$_POST['b'], ' = ', (int)$_POST['a'] * (int)$_POST['b'], '<br>';
                 break;
             case 'div':
                 echo (int)$_POST['a'], ' / ', (int)$_POST['b'], ' = ', (int)$_POST['a'] / (int)$_POST['b'], '<br>';
-              break;
+                break;
             case 'mod':
                 echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', (int)$_POST['a'] % (int)$_POST['b'], '<br>';
                 break;

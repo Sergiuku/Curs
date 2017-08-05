@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['submit'])) {
-    $a= $_POST['a'];
-    $b= $_POST['b'];
+    $a = $_POST['a'];
+    $b = $_POST['b'];
     switch ($_POST['op']) {
         case 'add':
             echo $a, ' + ', $b, ' = ', $a + $b, '<br>';

@@ -1,12 +1,17 @@
 <?php
 $fructe = array(
-    'mere ' => 'Merele contin multi antioxidanti.',
-    'pere ' => 'Perele sunt bogate in vitamina C si in potasiu.',
-    'alune ' => 'Alunele sunt bogate in proteine , grasimi nesaturate si vitamina B6.'
+    'mere' => 'Merele contin multi antioxidanti.',
+    'pere' => 'Perele sunt bogate in vitamina C si in potasiu.',
+    'alune' => 'Alunele sunt bogate in proteine , grasimi nesaturate si vitamina B6.'
 );
+
 if (isset($_GET['fructe']) && isset($_GET['submit'])) {
     foreach ($_GET['fructe'] as $fruct) {
-        echo '<p>', $fructe[$fruct], '</p>';
+        if($fruct == array_key_exists($fruct, $fructe)) {
+            echo '<p>', $fructe[$fruct], '</p>';
+        } else {
+            echo 'Fructul nu exista.';
+        }
     }
 }
 ?>

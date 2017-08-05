@@ -1,37 +1,23 @@
 <?php
 if (isset($_POST['submit']) && !empty(isset($_POST['submit']))) {
     if (isset($_POST['a']) && isset($_POST['b']) && !empty($_POST['a']) && !empty($_POST['b'])) {
-        $op = 'none';
-        if (isset($_POST['op'])) {
-            $op = $_POST['op'];
-        }
-        switch ($op) {
+        switch ($_POST['op']) {
             Case 'none':
             case 'add':
                 echo (int)$_POST['a'], ' + ', (int)$_POST['b'], ' = ', (int)$_POST['a'] + (int)$_POST['b'], '<br>';
-                if ($op != 'none') {
-                    break;
-                }
+                break;
             case 'sub':
                 echo (int)$_POST['a'], ' - ', (int)$_POST['b'], ' = ', (int)$_POST['a'] - (int)$_POST['b'], '<br>';
-                if ($op != 'none') {
-                    break;
-                }
+               break;
             case 'mul':
                 echo (int)$_POST['a'], ' * ', (int)$_POST['b'], ' = ', (int)$_POST['a'] * (int)$_POST['b'], '<br>';
-                if ($op != 'none') {
-                    break;
-                }
+                break;
             case 'div':
                 echo (int)$_POST['a'], ' / ', (int)$_POST['b'], ' = ', (int)$_POST['a'] / (int)$_POST['b'], '<br>';
-                if ($op != 'none') {
-                    break;
-                }
+              break;
             case 'mod':
                 echo (int)$_POST['a'], ' % ', (int)$_POST['b'], ' = ', (int)$_POST['a'] % (int)$_POST['b'], '<br>';
-                if ($op != 'none') {
-                    break;
-                }
+                break;
             default:
                 echo "Trebuie specificat unul dintre urmatorii operatori: add,sub,mult,div,mod", "<br>";
                 break;

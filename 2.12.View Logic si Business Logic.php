@@ -17,7 +17,7 @@ if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['submit'])) {
             echo $_POST['a'], ' % ', $_POST['b'], ' = ', $_POST['a'] % $_POST['b'], '<br>';
             break;
         default:
-            echo 'Trebuie specificat unul dintre numere sau operatul.', "<br>";
+            echo 'Trebuie specificat unul dintre numere sau operatorul.', "<br>";
             break;
     }
 }

@@ -2,10 +2,9 @@ Linia 2: Variabila $a primeste ca valoarea int-ul 42.
 Linia 3: Se scrie bucla for in care se va initializa variabila $i=8*PHP_INT_SIZE-1(Calculul va fi: 8*valoarea in biti, adica 4, -1),
 urmata de conditia $i>=0($i mai mare sau egala decat 0), dupa care expresia de decrementare $i--.
 Linia 4: Se va afisa ($a>>$i, folosindu-se operatorul >> se pierd cei mai din dreapta biti la fiecare iteratie a buclei cu valoarea ce o are $i, iar in partea din stanga vor aparea biti noi. Cand $i are valorile 5,3,1, ultimul bit din sir va fi 1).
-Dupa shift to right, se va face o operatie binary and comparandu-se bitii rezultati din operatia shift to right cu 1, afisandu-se ori 1(ca TRUE) ori 0(Ca false).
+Dupa shift to right, se va face o operatie binary and, comparandu-se bitii rezultati din operatia shift to right cu 1, afisandu-se ori 1(ca TRUE) ori 0(Ca false).
 Vor fi true numai 3 numere: 5,3,1;
 
 exemplu de afisaj:Atunci cand $i=5 => ($a>>$i) = 1; $i = 101 bits; $a = 101010 bits si ($a>>$i) & 1 = 1;
 
 
-P.S. Am incercat varianta 00101010 >> 3 = 00000101, rezultatul meu fiind 4161. Daca adaug decbin imi apare 1000001000001.

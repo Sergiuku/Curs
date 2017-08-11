@@ -4,7 +4,7 @@ Le vom lua pe rand:
 1.Operatia shift to right:
 	La fiecare iteratie a buclei, operatia shift to right va calcula binar mutand spre dreapta bitii variabilei $a cu atatea pozitii cat indica valoarea ce o primeste variabila $i la fiecare iteratie.
 	Primele 26 de iteratii au ca rezultat valoarea repezentata zecimal ca 0 deoarece la ficare shiftare codul binar va fi alcatuit numai din 0.
-	Ultimele 6 iteratii cand indexul are valorile $i=5,4,3,2,1,0, acestea au ca rezultat valori reprezentate zecimal ca 1,2,5,10,21,42. Acestea sunt rezultatul shiftarii codului binar specificat mai sus.
+	Ultimele 6 iteratii cand indexul are valorile $i=5,4,3,2,1,0, acestea au ca rezultat al shiftari numerele 1,2,5,10,21,42. Acestea sunt rezultatul shiftarii codului binar specificat mai sus.
 	
 2. Operatia binary and:
 	Operatia binary and va arata daca primul bit din rezultatul operatiei shift to right este setat si daca primul bit din 1 este setat.

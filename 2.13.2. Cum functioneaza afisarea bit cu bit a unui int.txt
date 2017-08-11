@@ -11,5 +11,4 @@ Le vom lua pe rand:
 	In urma operatiei binary and, numai valorile rezultate din operatia shift to right, 1,5,21, valorile de la ultimele 6 iteratii au primul bit setat.
 3.Operatorul ternar:
 	Acesta va afisa 1 ca True pentru numerele ce au primul bit setat, si 0 ca False pentru numerele ce au ultimul bit setat.
-
-Rezultatul expresiei ($a>>$i) & 1 ? '1':'0' va afisa reprezentarea binara a numarului 42, acest numar fiind valoarea data la inceput variabilei $a.
+Outputul expresiei ($a>>$i) & 1 ? '1':'0' va fi reprezentarea binara a numarului 42, acest numar fiind valoarea data la inceput variabilei $a.

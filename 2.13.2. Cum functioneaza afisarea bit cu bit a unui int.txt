@@ -1,10 +1,15 @@
-Linia 2: Variabila $a primeste ca valoarea int-ul 42.
-Linia 3: Se scrie bucla for in care se va initializa variabila $i=8*PHP_INT_SIZE-1(Calculul va fi: 8*valoarea in biti, adica 4, -1),
-urmata de conditia $i>=0($i mai mare sau egala decat 0), dupa care expresia de decrementare $i--.
-Linia 4: Se va afisa ($a>>$i)(folosindu-se operatorul >>, se pierd cei mai din dreapta biti la fiecare iteratie a buclei cu valoarea ce o are $i, iar in partea din stanga vor aparea biti noi. Cand $i are valorile 5,3,1, ultimul bit din sir va fi 1).
-Dupa shift to right se va face o operatie binary and, comparandu-se bitii rezultati din operatia shift to right cu 1, afisandu-se ori 1(ca TRUE) ori 0(Ca false).
-Vor fi true numai 3 numere: 5,3,1;
+In primul rand se creeaza o bucla for ce are ca initializare pe $i. Valoarea lui $i este 31. Conditia buclei $i>=0 va fi executata la fiecare iteratie a buclei pana va fi evaluata ca adevarata. Expresia este o decrementare a variabilei $i.
+Outputul din blocul de instructiuni contine: o operatie shift to right($a>>$i), o operatie binary and ($a>>$i) & 1 si un operator ternar ($a>>$i) & 1 ? '1':'0'. 
+Le vom lua pe rand:
+1.Operatia shift to right:
+	La fiecare iteratie a buclei, operatia shift to right va calcula binar mutand spre dreapta bitii variabilei $a cu atatea pozitii cat indica valoarea ce o primeste variabila $i la fiecare iteratie.
+	Primele 26 de iteratii au ca rezultat valoarea repezentata zecimal ca 0 deoarece la ficare shiftare codul binar va fi alcatuit numai din 0.
+	Ultimele 6 iteratii cand indexul are valorile $i=5,4,3,2,1,0, acestea au ca rezultat valori reprezentate zecimal ca 1,2,5,10,21,42. Acestea sunt rezultatul shiftarii codului binar specificat mai sus.
+	
+2. Operatia binary and:
+	Operatia binary and va arata daca primul bit din rezultatul operatiei shift to right este setat si daca primul bit din 1 este setat.
+	In urma operatiei binary and, numai valorile rezultate din operatia shift to right, 1,5,21, valorile de la ultimele 6 iteratii au primul bit setat.
+3.Operatorul ternar:
+	Acesta va afisa 1 ca True pentru numerele ce au primul bit setat, si 0 ca False pentru numerele ce au ultimul bit setat.
 
-exemplu de afisaj:Atunci cand $i=5 => ($a>>$i) = 1; $i = 101 bits; $a = 101010 bits si ($a>>$i) & 1 = 1;
-
-
+Bucla va afisa reprezentarea binara a numarului 42, acest numar fiind valoarea data la inceput variabilei $a.

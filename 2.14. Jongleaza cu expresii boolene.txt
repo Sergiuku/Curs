@@ -1,0 +1,1 @@
+Operatia xor este utila atunci cand se verifica daca 2 valori sunt egale.

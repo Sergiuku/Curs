@@ -1,0 +1,11 @@
+1.Variabile globale si locale.
+	Variabilele globale sunt definite global si pot fi accesate in orice functie.
+	Variabilele locale sunt definite in interiorul unei functii si o data ce fluxul de executie paraseste acea functie, variabila nu va mai putea fi accesata din alta parte.
+2. Require_once() - Se foloseste atunci cand se include in fisierul a.php fisierul b.php, iar daca fisierul este gasit ca fiind inclus, se va ignora urmatoarea includere.
+	Totodata daca fisierul b.php nu este gasit executia se va opri si se va afisa o eroare.
+	Exemplu ca am inteles: In cazul in care adaugi la o pagina principala footer-ul. Footer-ul il faci intr-un alt fisier dupa care il adaugi la sfarsitul paginii principale.
+3.Include_once() - Face aceeasi chestie ca si request numai ca va trece mai departe daca b.php nu este gasit si va afisa numai o avertizare.
+4.GOTO - este un operator prin care poti alege unde sa sara fluxul de executie. Punctul unde va sari fluxul este urmat de : si instructiunile ce urmeaza a fi executate.
+5.Return - Returneaza o valoarea fara a fi afisata. Valoarea returnata poate fi folosita prin afisare, atribuirea ei unei variabila de exemplu.
+6. Sintaxa alternativa la structurile de constrol - Se pot folosi : langa conditia unui construct, iar pentru stoparea constructului se foloseste de exemplu in cazul lui if, comanda endif;.
+Acest mod ne scuteste de paranteze si se poate folosit cand in interiorul unui construct este introdus si un bloc HTML.

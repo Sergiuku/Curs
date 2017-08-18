@@ -1,28 +1,23 @@
-În acest capitol ai învățat o grămadă de termeni noi. Folosind cuprinsul de la pagina 5, ia fiecare
+﻿În acest capitol ai învățat o grămadă de termeni noi. Folosind cuprinsul de la pagina 5, ia fiecare
 secțiune a acestui capitol la rând, și la fiecare scrie cel puțin un cuvânt sau expresie, fie el în română sau
 în engleză. La termenii în română, scrie și corespondenții englezești.
 Gândește-te cât știai înainte de a citi acest capitol. Cum te simți? Eu m-aș simți mândru. Felicitări!
 
-2.1 - Metalimbaj - metalanguage
-2.2 - Echo, comanda pentru afisare.
-2.3 
-	2.3.1 - Variabila(variable), retine o valoare, o cantitate de informatie ce poate fi reutilizata.
-	2.3.2 - Int, toate numere intregi, pozitive si negative ce pot fi date unei variabile.
-	2.3.3 - Operatii matematice, operatie facuta unei valori a unei variabile.
-2.4 - Alogrithm, un set de instructiuni, modele prin care atingi un anumit task.
-2.5 -
-2.6 -
-2.7 -
-2.8. -
-2.9 -
-2.10
-	2.10.1 -
-	2.10.2 -
-	2.10.3 -
-	2.10.4 -
-	2.10.5 -
-	2.10.6 -
-2.11 -
-2.12 -
-2.13 -
-2.14 -
+2.1  - Metalimbaj - metalanguage
+2.2  - Echo, comanda pentru afisare.
+2.3  - Variabila(variable), retine o valoare, o cantitate de informatie ce poate fi reutilizata.
+     - Int, toate numere intregi, pozitive si negative ce pot fi date unei variabile.
+     - Operatii matematice, operatie facuta unei valori a unei variabile.
+2.4  - Alogrithm, un set de instructiuni, modele prin care atingi un anumit task.
+2.5  - Conjunctie(and), este o operatie booleaana care va fi adavarata numai atunci cand ambele expresii booleene A si B vor fi adevarate.
+2.6  - If, constructul if contine o conditie. Conditia fiind o expresie booleana. Atat timp cat conditia este adevarata, PHP va executa blocul de instructiuni din construct.
+     - Else, este o ramura a constructul if, ce va fi executata daca conditia constructului if nu va fi adevarata.
+2.7  - While Loop, contine o conditie si un bloc de instructiuni. Cu ajutorul while loop-ului putem executa blocul de instructiuni atat timp cat conditia este adevarata.
+2.8. - Foreach Loop, funtioneaza cu ajutorul unui array. Se foloseste atunci cand avem nevoie de afisarea valorilor unui array intr-o bucla.
+2.9  - For loop, executa un bloc de instructiuni de cate ori este specificat in conditie.
+2.10 - Constanta(constants), se comporta la fel ca si o variabila numai ca diferenta intre ele este ca constanta nu isi va putea schimba valoarea o data ce a fost definita.
+     - String double-quoted, acestea interpreteaza variabilele din interiorul ghilimelelor si le transforma in valorile variabilelor.
+2.11 - $_GET, este o variabila ce permite utilizatorului sa introduce anumite valori prin intermediul URL-ului.
+2.12 - Multidimensional Array, un array ce poate contine mai multe array-uri.
+2.13 - Binary or, operatie ce verifica daca bitii din 2 valori a si b sunt setati.
+2.14 - Variabila Variabila, este o variabila construita pe baza valorii altei variabile.

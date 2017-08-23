@@ -31,7 +31,8 @@ constructe prin care controlezi fluxul si sintaxa in php.
 transmitand rezultatul clientului.Codul-sursa este alcatuit din codul scris in spatele unei aplicatii sau pagini web, 
 acesta fiind alcatuit din instructiunile care se executa. Codul sursa este delimitat de tag-urile
 <?php si ?>. Acest cod va fi procesat de php afisandu-se in browser rezultatul final al instructiunilor.
-	Rezultatul poate fi partial vazut in browser prin view source code.
+	Rezultatul poate fi partial vazut in browser prin view source code deoarece codul ce va fi afisat va fi cel
+finit, adica dupa procesare.
 	Fluxul de executie este modul prin care instructiunile cuprinse in codul-sursa
 se executa. Acest flux poate fi intrerupt sau controlat de anumite constructe.
 	Un exemplu ar fi constructul if care este o instructiune prestabilita pe baza

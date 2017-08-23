@@ -5,10 +5,10 @@ adresa IP formata din numere de la 0 la 255, dar unele ip-uri sunt folosite spec
 numai in retele locale. Ip-urile functioneaza ca si o adresa dintr-o localitate, 
 fiind folosita pentru a gasi un loc anume, iar in cazul nostru un dispozitiv conectat la retea.
 	Pentru a accesa orice nod din retea este nevoie sa stii adresa Ip sau DNS-ul. 
-	DNS-ul este foarte folosit in reteaua WEB. Web-ul este una dintre cele mai 
-raspandite retele(servicii) din internet, internetul  fiind  o retea alcatuita din mai multe retele. 
-	WEB-ul este un serviciu de documente interconectate, ele putand fi accesate 
-printr-un program numit  client. Pe langa WEB mai exista si alte servicii cum ar
+	DNS-ul este foarte folosit in reteaua WEB. Acesta este domeniul serverului, tansformand un ip intr-un nume. 
+	Web-ul este una dintre cele mai raspandite servicii din internet, internetul  fiind 
+ o retea alcatuita din mai multe retele. WEB-ul este un serviciu de documente interconectate, 
+ele putand fi accesate printr-un program numit  client. Pe langa WEB mai exista si alte servicii cum ar
 fi pop3 pentru e-mail sau ftp pentru transferul de fisiere. 
 In cazul web-ului, clientul este browserul prin care accesam acest serviciu. 
 Dar daca avem nevoie de client pentru a accesa informatiile, vom avea  nevoie si
@@ -18,21 +18,20 @@ Pentru a comunica intre ele au nevoie de un protocol, de un limbaj comun,
 iar pentru web acel limbaj comun este HTTP(Hypertext transfer protocol). Totodata
 pentru a face comunicarea posibila intre cele 2 este nevoie de un port prin care 
 serverul sa stie sa faca comunicarea corect. Primul lucru ce il face browser-ul 
-este sa stabileasca o conexiune prin retea la daemon aici intervenind DNS-ul. 
-	HTTP impreuna cu dns-ul si cu portul alcatuiesc URL-ul. Url-ul este la fel ca si
-adresa ip, unic pentru fiecare website. Broswser-ul trimite o cerere la serverul DNS
-primind inapoi adresa IP asociata DNS-ul, iar dupa ce s-a stabilit conexiunea, 
-browserul va incepe sa ceara informatii serverului web primind acele informatii prin pachete de date.
+este sa stabileasca o conexiune prin retea la daemon, aici intervenind DNS-ul. 
+	HTTP impreuna cu dns-ul si cu portul alcatuiesc URL-ul. Url-ul este alcatuit din protocolul HTTP, 
+DNS-ul care este domeniul pe care se afla resursa ceruta. Portul standard pentru http este 80. 
+Broswser-ul trimite o cerere la serverul DNS primind inapoi adresa IP asociata 
+URL-ului urmata de conexiunea la acea adresa IP, dupa care browserul va incepe sa ceara 
+informatii serverului web primind acele informatii prin pachete de date.
 	In Capitolul 2 vom vorbi despre controlul fluxului de executie si date, 
 constructe prin care controlezi fluxul si sintaxa in php.
 	Php-ul este un limbaj de uz general prin care se pot dezvolta aplicatii web.
 	Php-ul este o extensie a serverului web, procesand codul-sursa din pagina si
-transmitand rezultatul clientului.  Prin procesarea codului-sursa ne referim 
-la modificarea paginii web generand continut html pe baza codului-sursa si totodata
-extragand continut dintr-o baza de date. Codul sursa este delimitat de tag-urile
-<?php si ?>. Acest cod va fi procesat de php cu ajutorul fluxului de executie si
-inlocuit de rezultatul executiei codului-sursa. Rezultatul va fi transmis serverului,
-iar serverul transmitand mai departe clientului(browser-ului).
+transmitand rezultatul clientului.Codul-sursa este alcatuit din codul scris in spatele unei aplicatii sau pagini web, 
+acesta fiind alcatuit din instructiunile care se executa. Codul sursa este delimitat de tag-urile
+<?php si ?>. Acest cod va fi procesat de php afisandu-se in browser rezultatul final al instructiunilor.
+	Rezultatul poate fi partial vazut in browser prin view source code.
 	Fluxul de executie este modul prin care instructiunile cuprinse in codul-sursa
 se executa. Acest flux poate fi intrerupt sau controlat de anumite constructe.
 	Un exemplu ar fi constructul if care este o instructiune prestabilita pe baza

@@ -1,24 +1,69 @@
-	Vom incepe cu Capitolul 1 ce contine retelistica. Retelistica ne ajuta la comunicarea intre noduri. Prin nod ne referim la orice dispozitiv contectat la retea.
-Fiecare nod are o adresa IP particulara, iar prin aceste adrese IP poti comunica cu un nod. Cea mai raspandita retea este Internetul(WORLD WIDE WEB). Internetul este o retea alcatuita din mai multe servicii, cum ar fi pop3 pentru e-mail, ftp pentru transferul de fisere. Aceste servicii sunt accesate printr-un program numit client.
-Un client pentru www este browserul prin care accesam aceste adrese IP, dar daca avem client avem  nevoie si de un server, serverul fiind un program numit daemon care asteapta instructiuni de la client.  Fara aceste 2 programe comunicarea prin intermediul internetului nu ar fi posibila.
-
-	In Capitolul 2 vom vorbi despre controlul fluxului de executie si date, constructe prin care controlezi fluxul si sintaxa in php.
-	Php-ul este un limbaj de uz general prin care se pot dezvolta aplicatii web. Php-ul este o extensie a serverului web, procesand codul-sursa din pagina si transmitand rezultatul clientului.
-	Fluxul de executie este modul prin care instructiunile cuprinse in codul-sursa se executa. Acest flux poate fi intrerupt sau controlat cum ar fi de constructele create.
-	Constructele sunt structuri de control prin care controlam fluxul de executie pentru a creea rezultatul final transmis clientului.
-	Sintaxa este cea care ne ajuta in crearea un construct php. Fiecare construct are o regula sintactica ce trebuie respectata pentru a-l face efiecient si corect.
-Astfel, putem lua exemple ca structura de control, constructul if.
-Constructul if este folosita pentru a executa o bucata de cod in functie de valoarea de adevar a unei conditii. If contine un set de instructiuni ce vor fi executate atunci cand conditia este indeplinita. Constructul if mai contine o ramura else if prin care putem introduce mai multe conditii si o ramura else care va fi executata numai daca celelalte conditii nu sunt indeplinite.
-Ca structuri de control mai avem structura for, while, foreach.
-Acestea sunt structuri repetitive prin care se cunoaste dinainte numarul de repetitii  si care deobicei contine o conditie  si un bloc de instructiuni ce va fi executat repetitiv cat timp conditia este adevarata.
-Revenind la conditia unui construct, aceasta poate fi alcatuita din expresii care sunt la randul lor niste constructii ale limbajului PHP. O expresie poate fi un sir de caractere, o variabila sau alte constructe. 
-Aceste expresii pot contine operatori matematici, cum ar fi adunare,scadere, inmultire sau impartire. Aceste operatii pot fi atribuite totodata unei variabile fiind tot valori ce pot fi afisate. Pe langa operatorii matematici mai avem si operatorii de comparare cum ar fi egal, identif, diferit, mai mic, mai mare ce sunt cel mai des folositi in cadrul constructului IF pentru a exprima conditia ce trebuie verificata, dar totodata toate acestea pot fi atribuite unei variabila, iar variabila sa faca parte din conditie.
-Variabilele sunt elemente ce au o anumita valoare data in cod sau introdusa chiar de client.
-Variabilele pot contine mai multe tipuri de valori cum ar fi:
+	Vom incepe cu Capitolul 1 ce contine retelistica. Retelistica ne ajuta la comunicarea
+intre noduri. Prin nod ne referim la orice dispozitiv contectat la retea.
+	Fiecare nod este conectat la o retea. Orice nod are o adresa unica numita 
+adresa IP formata din numere de la 0 la 255, dar unele ip-uri sunt folosite special 
+numai in retele locale. Ip-urile functioneaza ca si o adresa dintr-o localitate, 
+fiind folosita pentru a gasi un loc anume, iar in cazul nostru un dispozitiv conectat la retea.
+	Pentru a accesa orice nod din retea este nevoie sa stii adresa Ip sau DNS-ul. 
+	DNS-ul este foarte folosit in reteaua WEB. Web-ul este una dintre cele mai 
+raspandite retele(servicii) din internet, internetul  fiind  o retea alcatuita din mai multe retele. 
+	WEB-ul este un serviciu de documente interconectate, ele putand fi accesate 
+printr-un program numit  client. Pe langa WEB mai exista si alte servicii cum ar
+fi pop3 pentru e-mail sau ftp pentru transferul de fisiere. 
+In cazul web-ului, clientul este browserul prin care accesam acest serviciu. 
+Dar daca avem nevoie de client pentru a accesa informatiile, vom avea  nevoie si
+de un server care transmite acele informatii. Serverul este un program numit daemon 
+care asteapta instructiuni de la client. 
+Pentru a comunica intre ele au nevoie de un protocol, de un limbaj comun, 
+iar pentru web acel limbaj comun este HTTP(Hypertext transfer protocol). Totodata
+pentru a face comunicarea posibila intre cele 2 este nevoie de un port prin care 
+serverul sa stie sa faca comunicarea corect. Primul lucru ce il face browser-ul 
+este sa stabileasca o conexiune prin retea la daemon aici intervenind DNS-ul. 
+	HTTP impreuna cu dns-ul si cu portul alcatuiesc URL-ul. Url-ul este la fel ca si
+adresa ip, unic pentru fiecare website. Broswser-ul trimite o cerere la serverul DNS
+primind inapoi adresa IP asociata DNS-ul, iar dupa ce s-a stabilit conexiunea, 
+browserul va incepe sa ceara informatii serverului web primind acele informatii prin pachete de date.
+	In Capitolul 2 vom vorbi despre controlul fluxului de executie si date, 
+constructe prin care controlezi fluxul si sintaxa in php.
+	Php-ul este un limbaj de uz general prin care se pot dezvolta aplicatii web.
+	Php-ul este o extensie a serverului web, procesand codul-sursa din pagina si
+transmitand rezultatul clientului.  Prin procesarea codului-sursa ne referim 
+la modificarea paginii web generand continut html pe baza codului-sursa si totodata
+extragand continut dintr-o baza de date. Codul sursa este delimitat de tag-urile
+<?php si ?>. Acest cod va fi procesat de php cu ajutorul fluxului de executie si
+inlocuit de rezultatul executiei codului-sursa. Rezultatul va fi transmis serverului,
+iar serverul transmitand mai departe clientului(browser-ului).
+	Fluxul de executie este modul prin care instructiunile cuprinse in codul-sursa
+se executa. Acest flux poate fi intrerupt sau controlat de anumite constructe.
+	Un exemplu ar fi constructul if care este o instructiune prestabilita pe baza
+sintaxei php folosit pentru a executa o bucata de cod in functie de valoarea de 
+adevar a unei expresii boolean ca si conditie. In functie de valoarea de adevar 
+se va executa blocul de instructiuni de la ramura if, else if sau ramura else.
+Astfel, pe baza acestui construct manipulam fluxul de executie. Ca structuri de 
+control mai avem structura for, while, foreach. Acestea sunt structuri repetitive
+prin care se cunoaste dinainte numarul de repetitii si care deobicei contin o conditie
+ce este alcatuita dintr-o expresie boolean si un bloc de instructiuni ce va fi 
+executat repetitiv cat timp conditia este adevarata.
+	Revenind la conditia unui construct, aceasta pot fi expresii boolean care 
+sunt la randul lor niste constructii ale limbajului PHP. O expresie poate fi un 
+sir de caractere, o variabila sau alte constructe. Aceste expresii pot contine 
+operatori matematici, cum ar fi adunare,scadere, inmultire sau impartire. 
+Aceste operatii pot fi atribuite totodata unei variabile fiind tot valori ce pot fi afisate. 
+	Pe langa operatorii matematici mai avem si operatorii de comparare cum ar fi
+egal, identif, diferit, mai mic, mai mare ce sunt cel mai des folositi in cadrul
+constructului IF pentru a exprima conditia ce trebuie verificata, dar totodata 
+toate acestea pot fi atribuite unei variabila, iar variabila sa faca parte din conditie.
+	Variabilele sunt elemente ce au o anumita valoare data in cod sau introdusa chiar de client.
+	Variabilele pot contine mai multe tipuri de valori cum ar fi:
 	Int - este o valoare ce contine numai numere intregi;
 	String - acesta primeste ca valoare un sir de caractere.
-Pe langa acestea mai avem si operatorii logici, and, or, xor, && si ||.
-Construind codul-sursa cu toate structurile de control, operatorii,expresiile si variabilele trebuie sa si afisam cumva. De asta se ocupa instructiunile print si echo.  Cu ajutorul acestora vom putea afisa rezultatul scriptului php intr-un format HTML, acceptat de client(browser).
-Toate acestea fac parte din fluxul de executie. Cu ajutorul lor putem intrerupe, continua sau modifica, afisa fluxul. Vorbind de flux, acesta va incepe tot timpul cu prima linie de cod si va cobora pana la ultima, asta daca nu va aparea pe parcurs o structura de control ce va controla fluxul. 
+	Pe langa acestea mai avem si operatorii logici, and, or, xor, && si ||.
+	Construind codul-sursa cu toate structurile de control, operatorii,expresiile si
+variabilele trebuie sa si afisam cumva. De asta se ocupa instructiunile print si echo.  
+	Cu ajutorul acestora vom putea afisa rezultatul scriptului php intr-un format HTML, acceptat de client(browser).
+	Toate acestea fac parte din fluxul de executie. Cu ajutorul lor putem intrerupe,
+continua sau modifica, afisa fluxul. Vorbind de flux, acesta va incepe tot timpul
+ cu prima linie de cod si va cobora pana la ultima, asta daca nu va aparea pe parcurs
+ o structura de control ce va controla fluxul. 
 	
 

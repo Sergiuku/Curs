@@ -10,8 +10,8 @@ fiind folosita pentru a gasi un loc anume, iar in cazul nostru un dispozitiv con
  o retea alcatuita din mai multe retele. WEB-ul este un serviciu de documente interconectate, 
 ele putand fi accesate printr-un program numit  client. Pe langa WEB mai exista si alte servicii cum ar
 fi pop3 pentru e-mail sau ftp pentru transferul de fisiere. 
-In cazul web-ului, clientul este browserul prin care accesam acest serviciu. 
-Dar daca avem nevoie de client pentru a accesa informatiile, vom avea  nevoie si
+	In cazul web-ului, clientul este browserul prin care accesam acest serviciu. 
+	Dar daca avem nevoie de client pentru a accesa informatiile, vom avea  nevoie si
 de un server care transmite acele informatii. Serverul este un program numit daemon 
 care asteapta instructiuni de la client. 
 Pentru a comunica intre ele au nevoie de un protocol, de un limbaj comun, 
@@ -22,7 +22,7 @@ este sa stabileasca o conexiune prin retea la daemon, aici intervenind DNS-ul.
 	HTTP impreuna cu dns-ul si cu portul alcatuiesc URL-ul. Url-ul este alcatuit din protocolul HTTP, 
 DNS-ul care este domeniul pe care se afla resursa ceruta. Portul standard pentru http este 80. 
 Broswser-ul trimite o cerere la serverul DNS primind inapoi adresa IP asociata 
-URL-ului urmata de conexiunea la acea adresa IP, dupa care browserul va incepe sa ceara 
+URL-ului urmata de conexiunea la acea adresa IP pe portul 80, dupa care browserul va incepe sa ceara 
 informatii serverului web primind acele informatii prin pachete de date.
 	In Capitolul 2 vom vorbi despre controlul fluxului de executie si date, 
 constructe prin care controlezi fluxul si sintaxa in php.

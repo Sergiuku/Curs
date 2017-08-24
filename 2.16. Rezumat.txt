@@ -30,13 +30,10 @@ informatii serverului web primind acele informatii prin pachete de date.
 	In Capitolul 2 vom vorbi despre controlul fluxului de executie si date, 
 constructe prin care controlezi fluxul si sintaxa in php.
 	Php-ul este un limbaj de uz general prin care se pot dezvolta aplicatii web.
-	Php-ul este o extensie a serverului web, procesand codul-sursa din pagina si
-transmitand rezultatul clientului.Codul-sursa este alcatuit din codul scris in spatele unei aplicatii sau pagini web, 
-acesta fiind alcatuit din instructiunile care se executa. Codul sursa este delimitat de tag-urile
-<?php si ?>. Acest cod va fi procesat de php afisandu-se in browser rezultatul final al instructiunilor.
-	Rezultatul poate fi partial vazut in browser prin view source code deoarece codul ce va fi afisat va fi cel
-finit, adica dupa procesare.
-	Fluxul de executie este modul prin care instructiunile cuprinse in codul-sursa
+	Php-ul este o extensie a serverului web, procesand codul din pagina si
+transmitand rezultatul clientului.Codul  unei pagini web este html-ul, iar codul php este pus in mai multe scripturi si este
+folosit la generarea codului acelei pagini.
+	Fluxul de executie este modul prin care instructiunile cuprinse in codul php
 se executa. Acest flux poate fi intrerupt sau controlat de anumite constructe.
 	Un exemplu ar fi constructul if care este o instructiune prestabilita pe baza
 sintaxei php folosit pentru a executa o bucata de cod in functie de valoarea de 

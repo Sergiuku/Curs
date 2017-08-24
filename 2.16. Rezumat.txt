@@ -5,14 +5,14 @@ adresa IP formata din numere de la 0 la 255, dar unele ip-uri sunt folosite spec
 numai in retele locale. Ip-urile functioneaza ca si o adresa dintr-o localitate, 
 fiind folosita pentru a gasi un loc anume, iar in cazul nostru un dispozitiv conectat la retea.
 	Pentru a accesa orice nod din retea este nevoie sa stii adresa Ip sau DNS-ul. 
-	DNS-ul este foarte folosit in reteaua WEB. Acesta este domeniul serverului, tansformand un ip intr-un nume. 
+	DNS-ul este foarte folosit in reteaua WEB. DNS-ul este un sistem ce converteste numele unui domeniu in adresa IP asociata acestuia.
 	Web-ul este una dintre cele mai raspandite servicii din internet, internetul  fiind 
  o retea alcatuita din mai multe retele. WEB-ul este un serviciu de documente interconectate, 
 ele putand fi accesate printr-un program numit  client. Pe langa WEB mai exista si alte servicii cum ar
 fi pop3 pentru e-mail sau ftp pentru transferul de fisiere. 
 	In cazul web-ului, clientul este browserul prin care accesam acest serviciu. 
 	Dar daca avem nevoie de client pentru a accesa informatiile, vom avea  nevoie si
-de un server care transmite acele informatii. Pentru serviciul web daemonul se numeste apache. 
+de un server care transmite acele informatii. Pentru serviciul web serverul este un program numit apache.
 Daemonul este un program ce ruleaza pe server si ajuta la comunicarea cu clientul.
 Pentru a comunica intre ele au nevoie de un protocol, de un limbaj comun, 
 iar pentru web acel limbaj comun este HTTP(Hypertext transfer protocol). Totodata

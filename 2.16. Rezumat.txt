@@ -31,7 +31,7 @@ informatii serverului web primind acele informatii prin pachete de date.
 constructe prin care controlezi fluxul si sintaxa in php.
 	Php-ul este un limbaj de uz general prin care se pot dezvolta aplicatii web.
 	Php-ul este o extensie a serverului web, procesand codul din pagina si
-transmitand rezultatul clientului.Codul  unei pagini web este html-ul, iar codul php este pus in mai multe scripturi si este
+transmitand rezultatul clientului.Pagina web este descrisa prin cod html, iar codul php este pus in mai multe scripturi si este
 folosit la generarea codului acelei pagini.
 	Fluxul de executie este modul prin care instructiunile cuprinse in codul php
 se executa. Acest flux poate fi intrerupt sau controlat de anumite constructe.

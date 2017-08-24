@@ -40,19 +40,20 @@ sintaxei php folosit pentru a executa o bucata de cod in functie de valoarea de
 adevar a unei expresii boolean ca si conditie. In functie de valoarea de adevar 
 se va executa blocul de instructiuni de la ramura if, else if sau ramura else.
 Astfel, pe baza acestui construct manipulam fluxul de executie. Ca structuri de 
-control mai avem structura for, while, foreach. Acestea sunt structuri repetitive
+control mai avem structura for, foreach. Acestea sunt structuri repetitive
 prin care se cunoaste dinainte numarul de repetitii si care deobicei contin o conditie
 ce este alcatuita dintr-o expresie boolean si un bloc de instructiuni ce va fi 
-executat repetitiv cat timp conditia este adevarata.
+executat repetitiv cat timp conditia este adevarata. In schimb, structura while este intr-adevar o structura
+repetitiva, dar in cazul ei nu se cunosct dinainte numarul de repetitii.
 	Revenind la conditia unui construct, aceasta pot fi expresii boolean care 
 sunt la randul lor niste constructii ale limbajului PHP. O expresie poate fi un 
 sir de caractere, o variabila sau alte constructe. Aceste expresii pot contine 
 operatori matematici, cum ar fi adunare,scadere, inmultire sau impartire. 
-Aceste operatii pot fi atribuite totodata unei variabile fiind tot valori ce pot fi afisate. 
+Rezultatul operatiilor pot fi atribuite totodata unei variabile fiind tot valori ce pot fi afisate. 
 	Pe langa operatorii matematici mai avem si operatorii de comparare cum ar fi
-egal, identif, diferit, mai mic, mai mare ce sunt cel mai des folositi in cadrul
+egal, identic, diferit, mai mic, mai mare, acestia sunt foarte des folositi in cadrul
 constructului IF pentru a exprima conditia ce trebuie verificata, dar totodata 
-toate acestea pot fi atribuite unei variabila, iar variabila sa faca parte din conditie.
+toati operatorii de comparare pot fi atribuiti unei variabila, iar variabila sa faca parte din conditie.
 	Variabilele sunt elemente ce au o anumita valoare data in cod sau introdusa chiar de client.
 	Variabilele pot contine mai multe tipuri de valori cum ar fi:
 	Int - este o valoare ce contine numai numere intregi;
@@ -62,8 +63,6 @@ toate acestea pot fi atribuite unei variabila, iar variabila sa faca parte din c
 variabilele trebuie sa si afisam cumva. De asta se ocupa instructiunile print si echo.  
 	Cu ajutorul acestora vom putea afisa rezultatul scriptului php intr-un format HTML, acceptat de client(browser).
 	Toate acestea fac parte din fluxul de executie. Cu ajutorul lor putem intrerupe,
-continua sau modifica, afisa fluxul. Vorbind de flux, acesta va incepe tot timpul
- cu prima linie de cod si va cobora pana la ultima, asta daca nu va aparea pe parcurs
- o structura de control ce va controla fluxul. 
+continua sau modifica, afisa fluxul.
 	
 

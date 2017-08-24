@@ -24,7 +24,7 @@ va stii ca portul acela ii apartine serverului cu care trebuie sa comunice.
 	Portul deschide o cale de comunicare intre cei 2. Primul lucru ce il face browser-ul 
 este sa stabileasca o conexiune prin retea la daemon, aici intervenind DNS-ul. 
 	HTTP impreuna cu numele domeniului si cu portul alcatuiesc URL-ul.Portul standard pentru http este 80. 
-Broswser-ul trimite o cerere la serverul DNS primind inapoi adresa IP asociata 
+	Broswser-ul trimite o cerere la serverul DNS primind inapoi adresa IP asociata 
 domeniului din URL urmata de conexiunea la acea adresa IP pe portul 80, dupa care browserul va incepe sa ceara 
 informatii serverului web primind acele informatii prin pachete de date.
 	In Capitolul 2 vom vorbi despre controlul fluxului de executie si date, 
@@ -39,7 +39,7 @@ se executa. Acest flux poate fi intrerupt sau controlat de anumite constructe.
 sintaxei php folosit pentru a executa o bucata de cod in functie de valoarea de 
 adevar a unei expresii boolean ca si conditie. In functie de valoarea de adevar 
 se va executa blocul de instructiuni de la ramura if, else if sau ramura else.
-Astfel, pe baza acestui construct manipulam fluxul de executie. Ca structuri de 
+	Astfel, pe baza acestui construct manipulam fluxul de executie. Ca structuri de 
 control mai avem structura for, foreach. Acestea sunt structuri repetitive
 prin care se cunoaste dinainte numarul de repetitii si care deobicei contin o conditie
 ce este alcatuita dintr-o expresie boolean si un bloc de instructiuni ce va fi 
@@ -49,15 +49,15 @@ repetitiva, dar in cazul ei nu se cunosct dinainte numarul de repetitii.
 sunt la randul lor niste constructii ale limbajului PHP. O expresie poate fi un 
 sir de caractere, o variabila sau alte constructe. Aceste expresii pot contine 
 operatori matematici, cum ar fi adunare,scadere, inmultire sau impartire. 
-Rezultatul operatiilor pot fi atribuite totodata unei variabile fiind tot valori ce pot fi afisate. 
+	Rezultatul operatiilor pot fi atribuite totodata unei variabile fiind tot valori ce pot fi afisate. 
 	Pe langa operatorii matematici mai avem si operatorii de comparare cum ar fi
 egal, identic, diferit, mai mic, mai mare, acestia sunt foarte des folositi in cadrul
 constructului IF pentru a exprima conditia ce trebuie verificata, dar totodata 
 toati operatorii de comparare pot fi atribuiti unei variabila, iar variabila sa faca parte din conditie.
 	Variabilele sunt elemente ce au o anumita valoare data in cod sau introdusa chiar de client.
 	Variabilele pot contine mai multe tipuri de valori cum ar fi:
-	Int - este o valoare ce contine numai numere intregi;
-	String - acesta primeste ca valoare un sir de caractere.
+		Int - este o valoare ce contine numai numere intregi;
+		String - acesta primeste ca valoare un sir de caractere.
 	Pe langa acestea mai avem si operatorii logici, and, or, xor, && si ||.
 	Construind codul-sursa cu toate structurile de control, operatorii,expresiile si
 variabilele trebuie sa si afisam cumva. De asta se ocupa instructiunile print si echo.  

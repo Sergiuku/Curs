@@ -12,17 +12,20 @@ ele putand fi accesate printr-un program numit  client. Pe langa WEB mai exista 
 fi pop3 pentru e-mail sau ftp pentru transferul de fisiere. 
 	In cazul web-ului, clientul este browserul prin care accesam acest serviciu. 
 	Dar daca avem nevoie de client pentru a accesa informatiile, vom avea  nevoie si
-de un server care transmite acele informatii. Serverul este un program numit daemon 
-care asteapta instructiuni de la client. 
+de un server care transmite acele informatii. Pentru serviciul web daemonul se numeste apache. 
+Daemonul este un program ce ruleaza pe server si ajuta la comunicarea cu clientul.
 Pentru a comunica intre ele au nevoie de un protocol, de un limbaj comun, 
 iar pentru web acel limbaj comun este HTTP(Hypertext transfer protocol). Totodata
 pentru a face comunicarea posibila intre cele 2 este nevoie de un port prin care 
-serverul sa stie sa faca comunicarea corect. Primul lucru ce il face browser-ul 
+serverul sa stie sa faca comunicarea corect. Comunicarea intre server si client se face prin pachete de date.
+	Aceste pachete de date sunt insemnate cu un anumit port pentru comunica cele 2. 
+	Serverul trimite pachetele pe acel port, iar o data primite de catre client acesta 
+va stii ca portul acela ii apartine serverului cu care trebuie sa comunice.
+	Portul deschide o cale de comunicare intre cei 2. Primul lucru ce il face browser-ul 
 este sa stabileasca o conexiune prin retea la daemon, aici intervenind DNS-ul. 
-	HTTP impreuna cu dns-ul si cu portul alcatuiesc URL-ul. Url-ul este alcatuit din protocolul HTTP, 
-DNS-ul care este domeniul pe care se afla resursa ceruta. Portul standard pentru http este 80. 
+	HTTP impreuna cu numele domeniului si cu portul alcatuiesc URL-ul.Portul standard pentru http este 80. 
 Broswser-ul trimite o cerere la serverul DNS primind inapoi adresa IP asociata 
-URL-ului urmata de conexiunea la acea adresa IP pe portul 80, dupa care browserul va incepe sa ceara 
+domeniului din URL urmata de conexiunea la acea adresa IP pe portul 80, dupa care browserul va incepe sa ceara 
 informatii serverului web primind acele informatii prin pachete de date.
 	In Capitolul 2 vom vorbi despre controlul fluxului de executie si date, 
 constructe prin care controlezi fluxul si sintaxa in php.

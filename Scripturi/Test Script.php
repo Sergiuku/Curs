@@ -1,14 +1,18 @@
 <?php
+// Array cu cuvinte
 $words = array(
     'cal',
     'cas'
 );
+// Afisarea random a cuvintelor
 $word = $words[array_rand($words)];
 echo 'Cuvantul este un obiect, alcatuit din:';
+// Afisarea lungimii cuvantului in liniute
 for ($i = 0; $i < strlen($word); $i++) {
     echo ' _ ';
 }
 echo ' litere'."<br>";
+// Daca se ghiceste litera sa se afiseze.
 if (isset($_POST['letter']) && isset($_POST['submit'])) {
     $letter = $_POST['letter'];
     if(strpos($word, $letter) !== false) {

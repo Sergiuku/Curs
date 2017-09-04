@@ -5,21 +5,17 @@ $words = array(
     'cas'
 );
 $keep = array(
-    'c',
-    'a',
-    's',
-    'l'
 );
 // Afisarea random a cuvintelor
 $word = $words[array_rand($words)];
 // Daca se ghiceste litera sa se afiseze.
 if (isset($_POST['letter']) && isset($_POST['submit'])) {
-    if(in_array($_POST['letter'], $keep)) {
-        echo $_POST['hidden1'];
-    } else if(in_array($_POST['letter'], $keep[1])) {
-        echo $_POST['hidden2'];
+    array_push($keep,$_POST['letter']);
+    if(in_array($_POST['letter'] === 'c', $keep)) {
+        echo $_POST['c'];
+    } else if(in_array($_POST['letter'] === 'a', $keep)) {
+            echo $_POST['a'];
     }
-
     $letter = $_POST['letter'];
     $left = 0;
     $show = '';
@@ -49,10 +45,9 @@ if (isset($_POST['letter']) && isset($_POST['submit'])) {
     <fieldset>
         <legend>Ghiceste cuvantul:</legend>
         Introdu litera: <input type="text" name="letter"/>
-        <input type="hidden" name="hidden1" value="c"/>
-        <input type="hidden" name="hidden2" value="a"/>
-        <input type="hidden" name="hidden3" value="s'"/>
-        <input type="hidden" name="hidden" value="l"/>
+        <input type="hidden" name="c" value="c"/>
+        <input type="hidden" name="a" value="a"/>
+        <input type="hidden" name="s" value="s'"/>
         <input type="submit" name="submit" value="Ghiceste!"/>
     </fieldset>
 </form>

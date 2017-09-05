@@ -11,11 +11,6 @@ $word = $words[array_rand($words)];
 // Daca se ghiceste litera sa se afiseze.
 if (isset($_POST['letter']) && isset($_POST['submit'])) {
     array_push($keep,$_POST['letter']);
-    if(in_array($_POST['letter'] === 'c', $keep)) {
-        echo $_POST['c'];
-    } else if(in_array($_POST['letter'] === 'a', $keep)) {
-            echo $_POST['a'];
-    }
     $letter = $_POST['letter'];
     $left = 0;
     $show = '';

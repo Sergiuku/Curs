@@ -1,0 +1,8 @@
+Voi explica dupa liniile numerotate.
+1-16 -> Salvam ca intr-o cutie mai multe specificatii despre un produs, cum ar fi despre un papuc. 
+Specificatiile contin marime, culoare, firma si daca este pentru femei, barbati, copii.
+17-22 -> Sortam toate acele date din cutie dupa firma papucului.
+32-39 -> Facem un tabel unde sa introducem acele produse din cutie punand mai multe titluri pentru fiecare specificatie in parte.
+39-48 -> Producem un cod pentru a putea pune produsele cu toate specificatiile lor in tabel.
+48-56 -> Punem fiecare specificatie la titlurile asociate respectivei specificatii din tabel.
+58-63 -> Facem butoanele si le legam de partea de la liniile 17-22 pentru a putea sorta produsele direct de pe ecran.

@@ -1,0 +1,5 @@
+Linia 2 -> Producem o cutie in care introducem toate bancnotele ce exista, respectiv bancnota de 500, 200, 100, 50, 10, 5, 1.
+3-16 -> In aceste linii setam daca butonul calculeaza si suma a fost introdusa, sa calculeze cate bancnote si de ce valoare contine suma respectiva.
+16-21 -> Daca suma nu este introdusa va aparea o eroare pentru ca suma trebuie introdusa obligatoriu.
+33 -> Facem un loc unde sa se poata introduce suma. Acest loc este legat de codul de mai sus pentru a putea calcula bancnotele.
+34 -> Facem un buton prin care dupa introducerea sumei sa se poata calcula totul.

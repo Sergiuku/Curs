@@ -1,0 +1,16 @@
+1-5 -> Setam cate incercari are un utilizator pentru a incerca, adica 5.
+6-8 -> De fiecare data cand utilizatorul greseste numarul, aici se va scadea o incercare.
+9-10-> Punem sa se verifice daca nu s-a introdus niciun numar sa se se afiseze un mesaj cum ca trebuie introdusa o cifra.
+11 -> Aici setam numarul ce trebuie ghicit, folosind o magie prin care numarul apare aleatoriu.
+12-14 -> Daca utilizatorul isi termina incercarile prin ce e aici il anuntam ca nu mai are incercari, dar poate incepe jocul din nou.
+15-16 -> Daca utilizatorul are inca incercari si introduce un numar mai mare decat cel ce trebuie ghicit, 
+va primi un mesaj prin care il anunta ca numarul este mai mare decat cel ce trebuie ghicit.
+17-18 -> Daca utilizatorul are inca incercari si introduce un numar mai mic decat cel ce trebuie ghicit, 
+va primi un mesaj prin care il anunta ca numarul este mai mic decat cel ce trebuie ghicit.
+20-21 -> Daca utilizatorul ghiceste numarul, prin codul acesta se va afisa pe ecran numarul ghicit si mesajul ca a ghicit.
+21-23 -> Se afiseaza numarul de incercari ramase.
+
+33-35 -> Facem un formular unde utilizatorul sa introduca numarul.
+36 -> Aici va fi campul unde utilizatorul va introduce numarul, iar acest camp va fi legat la partea explicata mai sus.
+37-38 -> Acest cod tine minte numarul ce trebuie ghicit si incercarile ramase.
+39 -> Facem un buton prin care utilizatorul sa poate trimite numarul in cod pentru a fi trecut prin tot ce am explicat mai sus.
